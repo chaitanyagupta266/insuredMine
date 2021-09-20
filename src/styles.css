@@ -1,0 +1,472 @@
+/* You can add global styles to this file, and also import other style files */
+.img-container {
+    text-align: center;
+    display: block;
+    bottom: 0;
+  }
+  /* Copy Right Footer */
+.footer-copyright { background: #222; padding: 5px 0;}
+.footer-copyright .logo {    display: inherit;}
+.footer-copyright nav {    float: right;    margin-top: 5px;}
+.footer-copyright nav ul {  list-style: none; margin: 0;  padding: 0;}
+.footer-copyright nav ul li { border-left: 1px solid #505050; display: inline-block;  line-height: 12px;  margin: 0;  padding: 0 8px;}
+.footer-copyright nav ul li a{  color: #969696;}
+.footer-copyright nav ul li:first-child { border: medium none;  padding-left: 0;}
+.footer-copyright p { color: #969696; margin: 2px 0 0;}
+
+/* Login Page Css */
+
+.authentic-page {
+	width: 100%;
+	height: 100%;
+	display: table;
+	padding: 30px 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.authentic-wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.login-logo {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.login-section {
+	width: 100%;
+}
+
+.login-container .form-group em {
+	position: absolute;
+	right: 25px;
+	top: 10px;
+	opacity: 1;
+	font-size: 18px;
+}
+
+.login-container .btn {
+	background: #7DB042;
+	border-radius: 4px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	text-align: center;
+	/* line-height: 29px; */
+	font-weight: 500;
+	position: relative;
+}
+
+.login-container .btn:hover {
+	background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
+}
+
+.login-container .btn>span {
+	position: absolute;
+	text-align: right;
+	right: 10px;
+	vertical-align: middle;
+}
+
+.login-container label {
+	white-space: pre;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: #828D99;
+	letter-spacing: 0;
+	line-height: 18px;
+}
+
+.login-container .form-group label {
+	padding-left: 15px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 12px;
+	color: #304156;
+	letter-spacing: 0;
+	line-height: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.login-container h3 {
+	text-align: center;
+	font-weight: 500;
+}
+
+.login-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 40px 10px 100px 50px;
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+.login-container .text-right a {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 12px;
+	color: #7DB042;
+	letter-spacing: 0;
+	text-align: center;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+.login-container .text-right a:hover,
+.login-container p.signup-link a:hover {
+	color: #7DB042;
+	opacity: 0.9;
+}
+
+.login-container p.signup-link {
+	color: #9b9bb8;
+	text-align: center;
+	right: 0;
+	left: 0;
+	font-size: 14px;
+}
+
+.login-container p.signup-link a {
+	color: #9b9b9b;
+	font-weight: 600;
+}
+
+.login-container button:hover {
+	color: #fff;
+}
+
+.brand-logo img {
+	height: auto;
+	width: 170px;
+}
+
+.header-icon {
+	display: none;
+}
+
+#sideMenuToggle {
+	padding: 0 20px;
+	font-size: 22px;
+	color: #212529;
+}
+.error-block {
+	font-size: 13px;
+	color: #b82f2d;
+	position: absolute;
+}
+.has-danger .ng-select-container,
+.form-control.ng-touched.ng-invalid,
+.has-danger .form-control {
+	box-shadow: none;
+	border: 1px solid #B82F2D !important;
+	color: #3d3d3d;
+}
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+	float: left;
+	width: 10%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  .active{
+	  background: white;
+  }
+  /* Begin: Common CSS */
+:root {
+	--white: #fff;
+	--black: #000;
+	--gray: #676767;
+	--orange: #FF9900;
+	--orange-light: #FAB005;
+	--violet: #7752BE;
+	--red: #F03E3D;
+	--blue: #4DADF7;
+  }
+  
+  * {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+  
+  html, body {
+	padding: 0;
+	margin: 0;
+  }
+  
+  body {
+	font-family: 'Lexend', sans-serif;
+	font-size: 16px;
+  }
+  
+  a {
+	color: var(--black);
+	text-decoration: none !important;
+  }
+  
+  a:hover {
+	color: var(--orange);
+  }
+  
+  .hero-section,
+  .about-section,
+  .our-story-section,
+  .founder-section,
+  .leaders-section,
+  .footer-section {
+	padding: 40px 0;
+  }
+  
+  /* End: Common CSS */
+  
+  /* Begin: Hero Section */
+  
+  .hero-section h1 {
+	text-transform: capitalize;
+	font-weight: 200;
+  }
+  /* End: Hero Section */
+  
+  /* Begin: About Section */
+  .about-section .section-title h2:nth-child(1) {
+	font-weight: 200;
+  }
+  
+  .about-section h6{
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.5;
+  }
+  /* End: About Section */
+  
+  /* Begin: Our Story Section */
+  .our-story-section {
+	position: relative;
+	margin: 6em 0 10em;
+  }
+  
+  .our-story-section h2.section-heading {
+	font-weight: 200;
+	margin-bottom: 30px;
+  }
+  
+  .our-story-section p.section-desc {
+	font-size: 12px;
+	margin-bottom: 40px;
+  }
+  
+  .our-story-section h3 {
+	font-weight: 300;
+	margin-bottom: 40px;
+  }
+  
+  .our-story-section .counter .block {
+	padding: 20px 0;
+	border-top: 3px solid #ececec;
+  }
+  
+  .our-story-section .counter .block p {
+	font-size: 13.5px;
+  }
+  
+  .our-story-section .img-wrapper {
+	position: relative;
+  }
+  
+  .our-story-section .img-wrapper .overlap-img img,
+  .our-story-section .img-wrapper .overlap-img-1 img,
+  .our-story-section .img-wrapper .overlap-img-2 img {
+	border: 6px solid #fff;
+	border-radius: 20px;
+  }
+  
+  .our-story-section .img-wrapper .overlap-img-1 {
+	position: absolute;
+	top: -92px;
+	right: -40px;
+  }
+  
+  .our-story-section .img-wrapper .overlap-img-2 {
+	position: absolute;
+	bottom: -37%;
+	right: -13%;
+  }
+  
+  /* End: Our Story Section */
+  
+  /* Begin: CEO/Founder Section */
+  .founder-section .ceo-quote {
+	position: relative;
+	padding: 40px 0;
+  }
+  
+  .founder-section .ceo-quote .bg-quote {
+	position: absolute;
+	top: -16%;
+	left: -14%;
+	font-size: 14rem;
+	transform: rotate(180deg);
+	color: #ccc;
+	opacity: 0.4;
+	z-index: 0;
+  }
+  
+  .founder-section .ceo-quote h2 {
+	position: relative;
+	font-weight: 200;
+	margin-bottom: 40px;
+	z-index: 1;
+  }
+  /* End: CEO/Founder Section */
+  
+  /* Begin: Leaders Section */
+  .leaders-section h2 {
+	font-weight: 200;
+	margin-bottom: 4rem;
+  }
+  
+  .leaders-section .figure-caption p:nth-child(2) {
+	font-weight: 200;
+  }
+  /* End: Leaders Section */
+  
+  /* Begin: Footer Section */
+  .footer-section .text-wrapper h2 {
+	font-weight: 200;
+	line-height: 1.5;
+	margin-bottom: 20px;
+  }
+  
+  .footer-section .text-wrapper h2 span {
+	font-weight: 400;
+  }
+  
+  .footer-section .text-wrapper p {
+	font-size: 14px;
+  }
+  
+  .footer-section .types {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+  }
+  
+  .footer-section .types:hover {
+	background-color: #b6ddff51;
+  }
+  
+  .footer-section .types span {
+	border-radius: 50%;
+	padding: 14px;
+	margin-right: 15px;
+  }
+  
+  .footer-section .type-1 span {
+	color: #c7037a;
+	background-color: #ff76c92e;
+  }
+  
+  .footer-section .type-2 span {
+	color: #0331c7;
+	background-color: #769dff27;
+  }
+  
+  .footer-section .type-3 span {
+	color: #650451;
+	background-color: #ff76df2e;
+  }
+  
+  .footer-section .type-4 span {
+	color: #03c731;
+	background-color: #76ffbf2e;
+  }
+  
+  .footer-section .type-5 span {
+	color: #0c008c;
+	background-color: #7d76ff2e;
+  }
+  
+  .footer-section .type-6 span {
+	color: #c70303;
+	background-color: #ff76762e;
+  }
+  
+  .footer-section .types .text-block p:nth-child(2) {
+	font-size: 12px;
+	font-weight: 200;
+  }
+  /* End: Footer Section */
+  
+  /* Begin: Responsive CSS */
+  @media screen and (max-width: 991.98px) {
+	.our-story-section {
+	  margin: 0 0 1em;
+	}
+  
+	.our-story-section .img-wrapper .overlap-img-1 {
+	  position: relative;
+	  text-align: right;
+	  top: 30px;
+	  right: -30px;
+	  border: 0;
+	}
+	
+	.our-story-section .img-wrapper .overlap-img-1 img {
+	  border: 6px solid #fff;
+	  border-radius: 20px;
+	}
+  
+	.our-story-section .img-wrapper .overlap-img-2 {
+	  position: relative;
+	  text-align: right;
+	  bottom: 50px;
+	  right: -30px;
+	  border: 0;
+	}
+  
+	.our-story-section .img-wrapper .overlap-img-2 img {
+	  border: 6px solid #fff;
+	  border-radius: 20px;
+	}
+  
+  }
+  
+  @media screen and (max-width: 767.98px) {
+	.our-story-section .img-wrapper .overlap-img-1 {
+	  position: static;
+	  text-align: center;
+	}
+	
+	.our-story-section .img-wrapper .overlap-img-2 {
+	  position: static;
+	  text-align: center;
+	}
+  
+	.founder-section .ceo-quote .bg-quote {
+	  top: -10%;
+	}
+  }
+  /* End: Responsive CSS */

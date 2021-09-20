@@ -1,0 +1,8 @@
+<div class="row">
+<div class="col-md-3" *ngFor="let item of imagesArr">
+    <a data-fancybox [href]="item" class="fancybox" title="image" data-fancybox="images"
+    data-options='{"infobar" : false}'>
+    <img [id]="'image'" [src]="item" alt="no img" width="100%" height="300">
+</a>
+</div>
+</div>

@@ -1,0 +1,72 @@
+
+<div class="w3-card-4">
+    <h1>Personal Interests</h1>
+    <div class="w3-container">
+        <div class="img-container" *ngIf="!userObj">
+            <!-- Block parent element -->
+            <img src="assets/images/cricket.jpg" alt="cricket">
+            <p>Initially popular as the “Gentleman’s Game,” cricket, over the years has emerged as a sport beyond the
+                borders of gender, race and countries. Every time we hear words like “How was that?” or “Bowled out,” we
+                can
+                only think of the heartbeats, the cheering, the pressure and the amazement of a cricket match.
+                The International Cricket Council (ICC) governs matches globally whereas the rules of the game are laid
+                down
+                in a code called Laws of Cricket. Every cricket match is played between two teams of 15 players out of
+                which
+                the best and fittest 11 play the match. The match equipment including bat’s weight, usage of the ball,
+                wicket dimensions, position of umpires, etc. are strictly monitored on the field.
+                The format has changed considerably with matches in both limited and unlimited overs. In addition to
+                large
+                scale tournaments like the World Cup, country-based premier leagues such as the Indian Premier League
+                (IPL),
+                Big Bash League (BBL) and Champions League (CLT20) have gained popularity. The major national team
+                rivalries
+                in cricket are seen between England and Australia, India and Pakistan, South Africa and England with
+                nail-biting matches.
+                Although cricket is not the national game of India, it is definitely the most followed and played. The
+                Men’s
+                national team has won the cricket world cup in all formats under the leadership of captains like Kapil
+                Dev
+                and M.S. Dhoni. The Women’s national team is prospering and has reached world cup finals with players
+                like
+                Mithali Raj, Smriti Mandhana, Jhulan Goswami and so on. Even the under 19 and blind cricket teams of
+                India
+                have brought home several trophies.
+                Since cricket, as a sport drives so many emotions, it is the responsibility of every player to keep its
+                spirit alive. Gambling and illegal practices must completely be stopped in the game. Cricket should be
+                cherished as the childhood dream and adulthood celebration if not reality of a thousand hearts!
+            </p>
+        </div>
+        <div class="img-container" *ngIf="userObj && userObj.username">
+            <!-- Block parent element -->
+            <img src="assets/images/football.jpg" alt="football">
+            <p>College Football Data Warehouse is an American college football statistics website that was established
+                in 2000. The site compiled the yearly team records, game-by-game results, championships, and statistics
+                of college football teams, conferences, and head coaches at the NCAA Division I FBS and Division I FCS
+                levels, as well as those of some NCAA Division II, NCAA Division III, NAIA, NJCAA, and discontinued
+                programs. The site listed as its references annual editions of Spalding's Official Football Guide,
+                Street and Smith's Football Yearbooks, NCAA, NAIA, and NJCAA record books and guides, and historical
+                college football texts.[1]
+                College Football Data Warehouse was administered by Tex Noel and David DeLassus.[2] Noel (which is a nom
+                de plume[3]) of Bedford, Indiana, is the executive director of Intercollegiate Football Researchers
+                Association, a college football historian, statistician, and author.[4][5]
+                The website has been cited as a source by The New York Sun,[6] The Fort Worth Star-Telegram,[7] The
+                Columbus Ledger-Enquirer,[8] The State,[9] and The Lawrentian.[10] It has also been widely cited in
+                historical college football books,[11][12][13][14][15][16][17][18] and in scholarly journals such as the
+                Journal of Sports Economics,[19] the Utah Law Review,[20] the Tulsa Law Review,[21] the Oklahoma Law
+                Review,[22] and Sports Law.[23]
+                The website was shut down sometime after February 19, 2017, according to the Internet Archive, but in
+                September 2017 it was relaunched, although complete only through the 2015 season.[24]
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Select Texts to Highlight -->
+<select id="select" multiple [(ngModel)]="highlightTexts" *ngIf=" userObj && userObj.username && showDropdown">
+  <option *ngFor="let user of usersDB"  (click)="userSelected(highlightTexts)">{{user.username}}</option>
+</select>
+<app-textarea-highlight *ngIf="userObj && userObj.username"
+  [(ngModel)]="user.txt"
+  [highlightTexts]="highlightTexts"
+></app-textarea-highlight>
+

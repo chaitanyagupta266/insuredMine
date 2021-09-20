@@ -1,0 +1,11 @@
+<div class="container">
+    <div #backdrop class="backdrop">
+      <div class="highlights" [innerHTML]="highlightedText"></div>
+    </div>
+    <textarea
+      [(ngModel)]="textValue"
+      (keyup.backspace)="textValueBackspace()"
+      #textarea
+      placeholder="Enter Content"
+    ></textarea>
+  </div>

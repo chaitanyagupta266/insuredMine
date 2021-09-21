@@ -31,7 +31,6 @@
             ],
             "styles": [
               "src/assets/css/jquery.fancybox.min.css",
-              "node_modules/@ng-select/ng-select/themes/default.theme.css",
               "src/styles.css"
             ],
             "scripts": [
